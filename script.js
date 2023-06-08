@@ -9,12 +9,18 @@ function getComputerChoice() {
 // Return the result of one round of the game
 
 function playRound(playerSelection, computerSelection) {
-    let result = (playerSelection === "rock" && computerSelection === "scissors") ? "You Win! Rock beats Scissors" :
-                 (playerSelection === "rock" && computerSelection === "paper") ? "You Lose! Paper beats Rock" :
-                 (playerSelection === "paper" && computerSelection === "rock") ? "You Win! Paper beats Rock" :
-                 (playerSelection === "paper" && computerSelection === "scissors") ? "You Lose! Scissors beat Paper" :
-                 (playerSelection === "scissors" && computerSelection === "paper") ? "You Win! Scissors beat Paper" :
-                 (playerSelection === "scissors" && computerSelection === "rock") ? "You Lose! Rock beats Scissors" :
+    let result = (playerSelection === "rock" && 
+        computerSelection === "scissors") ? "You Win! Rock beats Scissors" :
+                 (playerSelection === "rock" &&
+        computerSelection === "paper") ? "You Lose! Paper beats Rock" :
+                 (playerSelection === "paper" && 
+        computerSelection === "rock") ? "You Win! Paper beats Rock" :
+                 (playerSelection === "paper" && 
+        computerSelection === "scissors") ? "You Lose! Scissors beat Paper" :
+                 (playerSelection === "scissors" && 
+        computerSelection === "paper") ? "You Win! Scissors beat Paper" :
+                 (playerSelection === "scissors" && 
+        computerSelection === "rock") ? "You Lose! Rock beats Scissors" :
                  "It's a Tie!"
     return result;
 }
